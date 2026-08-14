@@ -4,18 +4,20 @@ import PackageDescription
 let package = Package(
     name: "flutter_story_encoder",
     platforms: [
-        .macOS(.v11)
+        .macOS("11.0")
     ],
     products: [
         .library(name: "flutter-story-encoder", targets: ["flutter_story_encoder"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "FlutterFramework", path: "../FlutterFramework")
+    ],
     targets: [
         .target(
             name: "flutter_story_encoder",
-            dependencies: [],
-            path: "../Classes",
-            resources: []
+            dependencies: [
+                .product(name: "FlutterFramework", package: "FlutterFramework")
+            ]
         )
     ]
 )

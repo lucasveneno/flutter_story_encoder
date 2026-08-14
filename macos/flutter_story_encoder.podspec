@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Lucas Veneno' => 'webmaster@lucasveneno.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'flutter_story_encoder/Sources/flutter_story_encoder/**/*'
   s.dependency 'FlutterMacOS'
   s.platform = :osx, '11.0'
 
