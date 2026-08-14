@@ -1,3 +1,11 @@
+## Unreleased
+
+- **iOS/macOS (SPM)**: Move native Swift sources under
+  `ios/flutter_story_encoder/Sources/flutter_story_encoder` (and the macOS
+  equivalent) so the target is inside the Swift package root. `path: "../Classes"`
+  made Xcode fail with "target is outside the package root" on Flutter's default
+  Swift Package Manager integration.
+
 ## 1.2.2
 
 - **macOS/iOS**: Fixed Xcode compilation error by correcting `public` visibility on internal Pigeon-generated types.
